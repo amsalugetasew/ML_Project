@@ -1,0 +1,370 @@
+OPEN_DATE,ENGAED_CUST,RECRUITED_BY,STATUS
+2017,33118,Branch,Dormant
+2021,750708,Branch,Closed
+2018,39243,Service Provider,Active
+2017,1469,Agent,Closed
+2019,99757,Branch,Active
+2021,37123,Merchant,Dormant
+2020,261759,Agent,Pending Active
+2019,5752,Self Registered,Pending Active
+2018,16318,Agent,Closed
+2018,194,Merchant,Pending Active
+2023,124799,Agent,Closed
+2019,4097,Self Registered,Closed
+2019,1455,Service Provider,Dormant
+2019,530,Top Agent,Dormant
+2023,439306,Service Provider,Active
+2021,487,,Pending Active
+2024,218795,Branch,Closed
+2020,20537,Merchant,Closed
+2024,36223,Agent,Pending Active
+2020,1395,Branch,Suspend
+2021,155,,Active
+2022,38949,Self Registered,Dormant
+2022,7762,Merchant,Closed
+2022,3030,Top Agent,Dormant
+2022,42,Merchant,Suspend
+2023,1727,Service Provider,Pending Active
+2023,18860,Self Registered,Active
+2023,1253,Agent,Suspend
+2023,9676,Super Agent,Active
+2024,12271,Agent,Closed
+2024,8452,Super Agent,Active
+2024,874,Top Agent,Pending Active
+2024,42,Agent,Frozen
+2018,90,Agent,Suspend
+2022,111,Service Provider,Frozen
+2023,8,Top Agent,Suspend
+2023,98,Agent,Frozen
+2018,8,Super Agent,Dormant
+2022,3,,Suspend
+2017,4,Top Agent,Closed
+2022,2,Super Agent,Suspend
+2020,163142,Branch,Active
+2017,5614,Agent,Dormant
+2021,151804,Agent,Pending Active
+2018,955,Service Provider,Closed
+2024,4379101,Branch,Active
+2020,473399,Branch,Closed
+2021,4880,Service Provider,Dormant
+2020,166103,Agent,Active
+2019,54357,Agent,Active
+2018,9,Branch,Caped
+2021,5490,Merchant,Pending Active
+2022,35399,Merchant,Dormant
+2019,69814,Agent,Pending Active
+2019,460,,Pending Active
+2023,110554,Agent,Pending Active
+2019,942,Merchant,Pending Active
+2019,1098,,Dormant
+2021,420,Super Agent,Dormant
+2019,827,Merchant,Active
+2024,565,Merchant,Active
+2020,18,Agent,Caped
+2022,1894,,Closed
+2024,232197,Service Provider,Active
+2022,919,Super Agent,Dormant
+2023,3990,Self Registered,Closed
+2023,2589,Merchant,Pending Active
+2023,6581,Service Provider,Closed
+2023,372,Service Provider,Suspend
+2023,72,Top Super Agent,Pending Active
+2024,442,Service Provider,Suspend
+2018,107,Merchant,Closed
+2021,411,Self Registered,Suspend
+2021,10,Service Provider,Caped
+2022,155,Super Agent,Pending Active
+2022,58,Agent,Frozen
+2018,70,,Pending Active
+2020,8,Top Merchant,Active
+2024,3,Merchant,Closed
+2019,5,,Suspend
+2020,1,Merchant,Caped
+2019,3,Self Registered,Frozen
+2017,4,Super Agent,Active
+2023,3,Merchant,Frozen
+2018,1,Service Provider,Frozen
+2018,1,Merchant,Suspend
+2023,1,,Frozen
+2023,1,Top Super Agent,Closed
+2017,5079,Branch,Pending Active
+2021,35636,Self Registered,Dormant
+2020,257292,Service Provider,Active
+2022,649721,Branch,Active
+2024,570280,Branch,Pending Active
+2021,232034,Branch,Pending Active
+2019,93846,Branch,Closed
+2018,17115,Agent,Active
+2018,64200,Branch,Closed
+2018,6068,Self Registered,Active
+2022,89317,Agent,Pending Active
+2023,7152,Merchant,Active
+2018,142,Merchant,Active
+2021,2053,Agent,Suspend
+2021,1080,Service Provider,Pending Active
+2024,496851,Agent,Active
+2022,3683,Merchant,Pending Active
+2020,9959,Self Registered,Active
+2020,9648,Merchant,Pending Active
+2023,10916,Super Agent,Pending Active
+2022,8347,Self Registered,Pending Active
+2021,282,Top Agent,Pending Active
+2022,15,Service Provider,Caped
+2022,1072,Self Registered,Suspend
+2022,95,Super Agent,Active
+2023,1847,Top Agent,Pending Active
+2023,1015,Super Agent,Closed
+2018,49,Top Agent,Closed
+2019,78,Branch,Frozen
+2021,33,Super Agent,Active
+2024,317,,Closed
+2024,63,Top Agent,Closed
+2023,67,Branch,Caped
+2019,95,Top Agent,Closed
+2019,305,Agent,Suspend
+2021,20,Branch,Caped
+2019,11,Top Merchant,Dormant
+2017,22,,Pending Active
+2020,9,Top Merchant,Pending Active
+2018,61,,Closed
+2017,26,Service Provider,Dormant
+2021,1,Self Registered,Caped
+2017,22,Branch,Frozen
+2022,1,Third Party,Active
+2018,1,Top Merchant,Dormant
+2023,3,Top Merchant,Pending Active
+2022,1,Merchant,Frozen
+2018,1,Top Agent,Suspend
+2017,1,Top Agent,Pending Active
+2021,1107969,Agent,Dormant
+2019,261505,Branch,Dormant
+2021,13186,Self Registered,Active
+2023,1186438,Branch,Closed
+2023,605874,Agent,Active
+2019,165283,Agent,Dormant
+2018,3716,Self Registered,Closed
+2021,2002,Top Agent,Dormant
+2020,685173,Agent,Closed
+2021,2360,Branch,Suspend
+2020,8382,Service Provider,Dormant
+2019,1743,Service Provider,Closed
+2019,1081,Merchant,Closed
+2020,998,Top Agent,Dormant
+2022,302,Branch,Frozen
+2023,16961,Self Registered,Dormant
+2024,6302,Top Agent,Active
+2024,178,Branch,Frozen
+2023,691,,Pending Active
+2018,56,Branch,Frozen
+2019,326,,Active
+2017,74,Branch,Suspend
+2022,447,Super Agent,Closed
+2019,14,Branch,Caped
+2020,55,Merchant,Suspend
+2017,23,Agent,Suspend
+2019,7,Super Agent,Pending Active
+2021,3,Merchant,Frozen
+2020,6,Service Provider,Caped
+2024,2,Top Agent,Suspend
+2021,8,Agent,Caped
+2017,1,Service Provider,Frozen
+2024,2,Service Provider,Caped
+2019,3,Service Provider,Frozen
+2017,10730,Branch,Closed
+2018,193874,Branch,Dormant
+2020,513420,Branch,Dormant
+2022,837443,Agent,Dormant
+2021,14326,Self Registered,Closed
+2021,15026,Merchant,Closed
+2018,613,Service Provider,Dormant
+2023,955359,Branch,Pending Active
+2018,7870,Self Registered,Dormant
+2018,394,Top Agent,Dormant
+2023,411034,Agent,Dormant
+2021,748,Top Agent,Closed
+2020,1754,,Closed
+2020,1137,Top Agent,Pending Active
+2020,374,Top Agent,Closed
+2022,4394,Service Provider,Pending Active
+2022,372,,Pending Active
+2022,4938,Merchant,Active
+2023,1778,,Closed
+2023,4243,Merchant,Closed
+2023,6079,Branch,Suspend
+2023,8136,Top Agent,Active
+2023,528,Super Agent,Dormant
+2023,3881,,Active
+2024,3147,,Active
+2024,941,Agent,Suspend
+2017,53,Merchant,Closed
+2018,79,Top Agent,Pending Active
+2019,106,Top Agent,Pending Active
+2023,524,Top Agent,Closed
+2024,299,,Pending Active
+2018,63,,Active
+2019,33,Self Registered,Suspend
+2019,35,Super Agent,Dormant
+2017,79,,Dormant
+2020,4,,Suspend
+2024,7,Super Agent,Suspend
+2023,7,Agent,Caped
+2019,49,Service Provider,Suspend
+2024,6,Service Provider,Frozen
+2023,4,Top Super Agent,Active
+2018,2,Super Agent,Closed
+2020,2,Top Merchant,Closed
+2018,1,Top Merchant,Closed
+2024,1,Top Super Agent,Closed
+2020,2,Self Registered,Frozen
+2021,274033,Service Provider,Active
+2020,663239,Branch,Pending Active
+2021,1127349,Branch,Dormant
+2017,2063,Agent,Pending Active
+2022,203264,Agent,Closed
+2021,493393,Agent,Closed
+2022,529372,Branch,Pending Active
+2018,80570,Branch,Active
+2017,2697,Agent,Active
+2017,172,Merchant,Dormant
+2017,86,Merchant,Active
+2023,2200790,Branch,Dormant
+2018,42110,Agent,Dormant
+2018,5301,Self Registered,Pending Active
+2021,2527,Merchant,Active
+2022,8302,Service Provider,Closed
+2019,396,,Closed
+2019,525,Branch,Suspend
+2019,174,Top Agent,Active
+2020,12223,Self Registered,Closed
+2020,2013,Agent,Suspend
+2022,260024,Service Provider,Active
+2022,2702,,Dormant
+2022,1889,Agent,Suspend
+2022,800,Top Agent,Closed
+2023,2607,Top Agent,Dormant
+2023,802,Branch,Frozen
+2023,1618,Self Registered,Suspend
+2024,2138,Branch,Suspend
+2017,67,Merchant,Pending Active
+2020,322,,Pending Active
+2021,380,Top Agent,Active
+2023,37,Service Provider,Frozen
+2021,121,Branch,Frozen
+2021,71,Service Provider,Frozen
+2022,16,Self Registered,Frozen
+2020,9,Branch,Caped
+2023,86,Top Merchant,Active
+2019,12,Super Agent,Closed
+2019,6,Merchant,Suspend
+2020,2,Self Registered,Caped
+2018,25,Self Registered,Suspend
+2021,7,,Suspend
+2022,42,Branch,Caped
+2023,1,Super Agent,Frozen
+2018,38,Service Provider,Suspend
+2017,11,Top Merchant,Active
+2019,4,Top Merchant,Active
+2021,1,Merchant,Caped
+2018,3,Agent,Caped
+2023,1,Top Super Agent,Dormant
+2017,8,Branch,Caped
+2019,1,Top Agent,Suspend
+2017,35209,Branch,Active
+2017,6540,Service Provider,Active
+2021,74017,Agent,Active
+2020,1991239,Agent,Dormant
+2019,71349,Agent,Closed
+2018,13031,Agent,Pending Active
+2021,9730,Self Registered,Pending Active
+2020,1459,Service Provider,Pending Active
+2018,350,Merchant,Dormant
+2020,6652,Service Provider,Closed
+2019,5520,Self Registered,Active
+2021,2393,,Dormant
+2019,8615,Self Registered,Dormant
+2018,184,Top Agent,Active
+2018,409,Branch,Suspend
+2020,29903,Self Registered,Dormant
+2020,10042,Self Registered,Pending Active
+2021,10,Self Registered,Frozen
+2024,3320,Super Agent,Pending Active
+2021,73,Super Agent,Pending Active
+2022,19435,Self Registered,Active
+2022,10644,Self Registered,Closed
+2022,829,Service Provider,Suspend
+2022,340,,Active
+2023,5822,Self Registered,Pending Active
+2024,289,Super Agent,Closed
+2019,263,Service Provider,Pending Active
+2019,56,Agent,Frozen
+2024,768,Service Provider,Closed
+2024,140,Top Merchant,Active
+2017,53,Top Agent,Active
+2021,62,Merchant,Suspend
+2023,23,Self Registered,Frozen
+2024,7,Agent,Caped
+2018,8,Agent,Frozen
+2023,4,,Suspend
+2017,3,Super Agent,Pending Active
+2023,3,Service Provider,Caped
+2020,1,Top Agent,Suspend
+2022,7,Agent,Caped
+2017,8,Super Agent,Dormant
+2021,1,,Caped
+2020,3,Merchant,Frozen
+2021,2,Top Agent,Suspend
+2022,3551545,Branch,Dormant
+2017,177,Service Provider,Closed
+2018,57989,Branch,Pending Active
+2023,4637840,Branch,Active
+2019,92755,Branch,Pending Active
+2021,149217,Branch,Active
+2022,1619899,Branch,Closed
+2022,116730,Agent,Active
+2021,6118,Service Provider,Closed
+2018,202,,Dormant
+2018,192,Service Provider,Pending Active
+2021,1627,,Closed
+2019,56490,Service Provider,Active
+2020,70115,Merchant,Dormant
+2019,2548,Merchant,Dormant
+2020,306,,Active
+2020,5401,Merchant,Active
+2020,3181,,Dormant
+2020,208,Service Provider,Suspend
+2020,259,Top Agent,Active
+2023,16707,Merchant,Dormant
+2021,287,Service Provider,Suspend
+2022,5576,Branch,Suspend
+2022,5182,Service Provider,Dormant
+2022,463,Top Agent,Pending Active
+2022,765,Top Agent,Active
+2023,1464,Service Provider,Dormant
+2023,2576,,Dormant
+2017,38,,Active
+2024,212,Service Provider,Pending Active
+2021,690,Super Agent,Closed
+2020,64,Branch,Frozen
+2020,97,Agent,Frozen
+2017,27,,Closed
+2023,10,Super Agent,Suspend
+2024,53,Merchant,Pending Active
+2017,9,Service Provider,Suspend
+2021,69,Agent,Frozen
+2024,61,Branch,Caped
+2020,25,Service Provider,Frozen
+2023,25,Merchant,Suspend
+2020,85,Top Merchant,Dormant
+2017,4,Super Agent,Closed
+2024,18,Top Merchant,Pending Active
+2019,12,Super Agent,Active
+2020,51,Self Registered,Suspend
+2017,34,Top Agent,Dormant
+2019,4,Top Merchant,Pending Active
+2022,5,Top Agent,Suspend
+2018,1,Super Agent,Pending Active
+2024,3,Top Super Agent,Pending Active
+2018,2,Super Agent,Active
+2018,2,Top Merchant,Active
+2019,1,Merchant,Frozen
+2019,1,,Frozen

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBE-Birr analysis and prediction Dashboard</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a2e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Top Navbar */
+        .navbar {
+            width: 100%;
+            background-color: #0f3460;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            padding: 0 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 17px;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ff2e63;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            background-color: #16213e;
+            padding-top: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            color: white;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #0f3460;
+        }
+
+        /* Dashboard Content */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            padding-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #0f3460;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .small-card {
+            /*background-color: #1a1a2e;
+            background-color: #0f3460;*/
+            padding: 10px;
+            border-radius: 5px;
+            margin: 2px 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #ff2e63;
+            text-align: center;
+        }
+
+        .chart-container {
+            background-color: #0f3460;
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+
+        /* Table for displaying dataset */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ff2e63;
+        }
+
+        /* Dark Theme Styles */
+        body.dark {
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        .navbar.dark {
+            background-color: #0f3460;
+        }
+
+        .sidebar.dark {
+            background-color: #16213e;
+        }
+
+        .card.dark {
+            background-color: #0f3460;
+        }
+
+        .table th.dark {
+            background-color: #ff2e63;
+        }
+
+        /* Light Theme Styles */
+        body.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .navbar.light {
+            background-color: #f0f0f0;
+            color: #000000;
+        }
+
+        .sidebar.light {
+            background-color: #e0e0e0;
+        }
+
+        .card.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .table th.light {
+            background-color: #ffcccb;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        {% load static %}
+        <h2><a href="/"><img src="{% static 'images/cbe-birr.png' %}" alt="Iris Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-left: -10px"> CBE-Birr Dashboard</h2></a>
+        <a href="/">Dashboard</a>
+        <a href="{% url 'exploration' %}">Dataset Exploration</a>
+        <a href="{% url 'feature' %}">Feature Visualization</a>
+        <a href="{% url 'prediction' %}">Point Prediction</a>
+        <a href="{% url 'batch-predict' %}">Batch Prediction</a>
+        <div style="display: flex; align-items: center; gap: 10px; padding: 15px 25px;">
+            <label>Theme:</label>
+            <label for="dark-theme" style="display: flex; align-items: center;">
+                <input type="radio" id="dark-theme" name="theme-selector" value="dark" checked>
+                Dark
+            </label>
+            <label for="light-theme" style="display: flex; align-items: center;">
+                <input type="radio" id="light-theme" name="theme-selector" value="light">
+                Light
+            </label>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <div class="two-card-column">
+             <!-- New Card for Class Totals -->
+             <div class="card" style = "background-color: white">
+                <div style="display: flex; justify-content: space-around;">
+                    <div class="small-card" style = "background-color:Teal;">
+                        
+                        <h2 style = "color: white;"><strong>Total Customer</strong></h2>
+                        <i style = "color: white;">{{ count_cust }}M</i>
+                    </div>
+                    <div class="small-card" style = "background-color:Gold;">
+                        <h2 style = "color: white;"><strong>Transaction Value</strong></h2>
+                        <i style = "color: white;">{{ total_trx_value }}T</i>
+                    </div>
+                    <div class="small-card" style = "background-color:teal;">
+                        <h2 style = "color: white;"><strong>Transaction Volume</strong></h2>
+                        <i style = "color: white;">{{ total_trx_volume }}M</i>
+                    </div>
+                </div>
+            </div>
+              <!-- New Card for Class Totals -->
+              <div class="card" style = "background-color: white">
+                <div style="display: flex; justify-content: space-around;">
+                    <div class="small-card" style = "background-color:grey;margin-left:-8px;">
+                        <h2 style = "color: white;margin-left:-5px;"><strong>Other Customer</strong></h2>
+                        <i style = "color: white;">{{ other_cust }}M</i>
+                    </div>
+                    <div class="small-card" style = "background-color:skyblue;margin-left:-10px;">
+                        <h2 style = "color: white;"><strong>Branch Customer</strong></h2>
+                        
+                        <i style = "color: white;">{{ branch_cust }}M</i>
+                    </div>
+                    <div class="small-card" style = "background-color: Black;">
+                        <h2 style = "color: white;"><strong>Inactive Customer</strong></h2>
+                        <i style = "color: white;">{{ inact_acc }}M</i>
+                    </div>
+                </div>
+            </div>
+            <!-- New Card for Class Totals -->
+            <div class="card" style = "background-color: white">
+                <div style="display: flex; justify-content: space-around;">
+                    <div class="small-card" style = "background-color:pink;">
+                        <h2 style = "color: white;margin-left:-10px;"><strong>Active Customer</strong></h2>
+                        <i style = "color: white;">{{ acc_statues }}M</i>
+                        
+                    </div>
+                    <div class="small-card" style = "background-color:pink;">
+                        <h2 style = "color: white;margin-left:-12px;"><strong>Br Active Customer</strong></h2>
+                        <i style = "color: white;">{{ branch_active_cust }}M</i>
+                    </div>
+                    <div class="small-card" style = "background-color:brown;">
+                        <h2 style = "color: white;"><strong>Engaged Customer</strong></h2>
+                        <i style = "color: white;">{{ total_engage_cust }}M</i>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- New Card for Pie Chart -->
+            <div class="card">
+                {{ val_pie_chart_html | safe}}
+            </div>
+           
+            <div class="card">
+                {{vol_pie_chart_html | safe}}
+            </div>
+
+            <div class="card">
+                {{pie_chart_html | safe}}
+            </div>
+        </div>
+
+        
+
+        
+
+        <!-- Feature Distribution Charts -->
+        <div class="card">
+            <h3>Transaction Value</h3>
+                {{val_bar_chart_html|safe}}
+                <h3>Transaction Volume</h3>
+                {{vol_bar_chart_html | safe}}
+                <h3>Customer Engagment</h3>
+                {{eng_bar_chart_html| safe}}
+            
+        </div>
+    </div>
+
+    <script>
+        const themeRadios = document.querySelectorAll('input[name="theme-selector"]');
+
+        themeRadios.forEach(radio => {
+            radio.addEventListener('change', (event) => {
+                const selectedTheme = event.target.value;
+
+                // Remove existing theme classes
+                document.body.classList.remove('dark', 'light');
+                document.querySelector('.navbar').classList.remove('dark', 'light');
+                document.querySelector('.sidebar').classList.remove('dark', 'light');
+                document.querySelectorAll('.card').forEach(card => {
+                    card.classList.remove('dark', 'light');
+                });
+
+                // Add the selected theme class
+                document.body.classList.add(selectedTheme);
+                document.querySelector('.navbar').classList.add(selectedTheme);
+                document.querySelector('.sidebar').classList.add(selectedTheme);
+                document.querySelectorAll('.card').forEach(card => {
+                    card.classList.add(selectedTheme);
+                });
+            });
+        });
+
+    </script>
+    
+</body>
+</html>
